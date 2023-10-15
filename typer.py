@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 # coding=utf-8
 import time
 import pygame
@@ -186,7 +185,7 @@ class Typer:
                         self.run_wrapper()
                         for i in pygame.event.get(pygame.KEYDOWN):
                             if i.key in [globals.left, globals.right]:
-                                self.choice = 1 if self.choice is 0 else 0
+                                self.choice = 1 if self.choice == 0 else 0
                             elif i.key in globals.accept:
                                 raise UserWarning
             except IndexError:

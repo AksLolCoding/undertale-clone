@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 # coding=utf-8
 import gzip
 import os
@@ -228,7 +227,11 @@ def init():
 
 
 def maincycle():
-    threading.Thread(target=globals.room.on_enter, name='on_enter runner for first room').start()
+    thread = threading.Thread(target=globals.room.on_enter, name='on_enter runner for first room', daemon=True)
+    pygame.display.set_caption('UNDERTALE')
+    pygame.mixer.music.load("mus/mus_story_91.ogg")
+    pygame.mixer.music.play()
+    thread.start()
     while globals.running:
         if globals.room:
             globals.room.draw()

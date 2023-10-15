@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 # coding=utf-8
 import os
 import random
@@ -45,9 +44,9 @@ class room_introstory(Menu):
 
     def on_enter(self):
         if super().on_enter():
-            pygame.display.set_caption('UNDERTALE')
-            pygame.mixer.music.load("mus/mus_story_91.ogg")
-            pygame.mixer.music.play()
+            #pygame.display.set_caption('UNDERTALE')
+            #pygame.mixer.music.load("mus/mus_story_91.ogg")
+            #pygame.mixer.music.play()
             self.show_intro()
             globals.chara.go_to_room(rooms.Room_TEST1())
 

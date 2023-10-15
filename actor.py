@@ -1,7 +1,3 @@
-#!/usr/bin/python3
-# coding=utf-8
-
-
 class Actor:  # TODO: implement this!
     def __init__(self):
         pass

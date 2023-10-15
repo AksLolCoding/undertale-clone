@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 # coding=utf-8
 import math
 import threading
@@ -59,7 +58,9 @@ class Room:
         if self.c >= 30:
             self.c = 0
             globals.time += 1
-        pygame.event.pump()
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                globals.quit()
         self.clock.tick(30)
 
     def update_loop(self):

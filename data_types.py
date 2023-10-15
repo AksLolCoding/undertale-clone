@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 
 class DynamicLoadDict(dict):
     """Loads assets only when needed, caches them for later use."""

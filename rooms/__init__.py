@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 from rooms.common import *
 from rooms.menus import *
 from rooms.tests import *

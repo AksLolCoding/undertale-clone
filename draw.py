@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 #  coding=utf-8
 import threading
 import math
@@ -43,13 +42,13 @@ def draw_loop():
     clock = pygame.time.Clock()
     while globals.running:
         for i in sorted(globals.layers, reverse=True):
-            print(i, end=' ')
+            #print(i, end=' ')
             if globals.layers[i].want_removed:
                 globals.layers.pop(i)
             else:
                 if globals.layers[i].draw:
                     globals.display.blit(globals.layers[i].surface_draw, globals.layers[i].shift) # TODO: remove the shift.
-        print()
+        #print()
         pygame.display.flip()
         clock.tick(30)
 
