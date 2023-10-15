@@ -3,7 +3,7 @@ import pygame
 import frisk
 import rooms
 
-DEBUG = True
+DEBUG = False
 
 accept = [pygame.K_RETURN, pygame.K_z]
 cancel = [pygame.KMOD_SHIFT, pygame.K_x]

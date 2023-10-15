@@ -8,7 +8,7 @@ import time
 import pygame
 from pygame.locals import *
 
-# our modules are imported below the invoke_dog function
+# CHANGE GLOBALS.DEBUG TO FALSE
 
 
 global clock

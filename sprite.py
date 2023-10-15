@@ -31,7 +31,6 @@ class TexsheetList(data_types.DynamicLoadDict):
     def fetch(self, name):
         return pygame.image.load('decompilation/texture/{}.png'.format(name))
 
-
 texsheets = TexsheetList()
 
 
@@ -96,7 +95,6 @@ class Sprite(pygame.sprite.Sprite):
 
     @staticmethod
     def get_sprite(name: str, scale_value: float = 1, delay: int = 100, run: bool = True):
-
         data = json.load(open('decompilation/sprite/{}.json'.format(name)))
         texture_indexes = data['textures']
         origin = (data['origin']['x'], data['origin']['y'])

@@ -58,7 +58,7 @@ class Room:
         if self.c >= 30:
             self.c = 0
             globals.time += 1
-        for event in pygame.event.get():
+        for event in pygame.event.get(pygame.QUIT):
             if event.type == pygame.QUIT:
                 globals.quit()
         self.clock.tick(30)
